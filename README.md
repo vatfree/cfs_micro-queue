@@ -6,7 +6,7 @@ MicroQueue:
 * Fast
 
 > Note: MicroQueue can be used with `PowerQueue` but `MicroQueue` lacks the
-> properties of an key ordered list - *It does try to compensate when reinserting keys - this is specially optimized for the [PowerQueue](https://github.com/CollectionFS/Meteor-power-queue)*
+> properties of n key ordered list - *It does try to compensate when reinserting keys - this is especially optimized for the [PowerQueue](https://github.com/CollectionFS/Meteor-powerqueue)*
 
 And... It's powered by Meteor's reactive sugar :)
 
