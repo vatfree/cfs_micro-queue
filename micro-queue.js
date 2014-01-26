@@ -37,11 +37,10 @@ MicroQueue = function(lifo) {
     return self._length;
   };
 
-  /** @method MicroQueue.add Add item to the queue
+  /** @method MicroQueue.insert Add item to the queue
     * @param {any} value The item to add to the queue
-    * @param {boolean} reversed Internally used to add pre queue
     */
-  self.insert = function(key, value, reversed) {
+  self.insert = function(key, value) {
     // Compare key with first/last depending on lifo to determin if it should
     // be added reversed order. We track the greatest key entered - if we insert
     // a key lower than this we should add it the the opposite end of the queue

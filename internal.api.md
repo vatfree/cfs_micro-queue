@@ -48,20 +48,18 @@ Length / number of items in queue
 
 -
 
-#### <a name="MicroQueue.add"></a>*microqueue*.add(value, reversed)&nbsp;&nbsp;<sub><i>Anywhere</i></sub> ####
+#### <a name="MicroQueue.insert"></a>*microqueue*.insert(value)&nbsp;&nbsp;<sub><i>Anywhere</i></sub> ####
 -
-*This method __add__ is defined in `MicroQueue`*
+*This method __insert__ is defined in `MicroQueue`*
 
 __Arguments__
 
 * __value__ *{any}*  
 The item to add to the queue
-* __reversed__ *{boolean}*  
-Internally used to add pre queue
 
 -
 
-> ```self.insert = function(key, value, reversed) { ...``` [micro-queue.js:44](micro-queue.js#L44)
+> ```self.insert = function(key, value) { ...``` [micro-queue.js:43](micro-queue.js#L43)
 
 -
 
@@ -72,7 +70,7 @@ Internally used to add pre queue
 __Returns__  *{any}*
 The item that was next in line
 
-> ```self.getFirstItem = function() { ...``` [micro-queue.js:66](micro-queue.js#L66)
+> ```self.getFirstItem = function() { ...``` [micro-queue.js:65](micro-queue.js#L65)
 
 -
 
@@ -81,6 +79,6 @@ The item that was next in line
 *This method __reset__ is defined in `MicroQueue`*
 This method will empty all data in the queue.
 
-> ```self.reset = function() { ...``` [micro-queue.js:87](micro-queue.js#L87)
+> ```self.reset = function() { ...``` [micro-queue.js:86](micro-queue.js#L86)
 
 -
