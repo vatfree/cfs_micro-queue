@@ -4,7 +4,7 @@ Micro queue [![Build Status](https://travis-ci.org/CollectionFS/Meteor-micro-que
 MicroQueue is a simple LIFO or FIFO queue. It's faster than a simple array with `pop`/`shift` because `shift` is O(n)
 and can become slow with a large array.
 
-This queue was built as the backbone for the [`PowerQueue`](https://github.com/CollectionFS/Meteor-power-queue) package. The interface is very basic and consists of `add`, `get`, and `reset`, making it possible to write a custom micro-queue for `PowerQueue`, such as a queue that is persisted into a database.
+This queue was built as a [spinal-queue](https://github.com/CollectionFS/Meteor-power-queue/blob/master/spinal-queue.spec.md) for the [`PowerQueue`](https://github.com/CollectionFS/Meteor-power-queue) package. The interface is very basic and consists of `add`, `get`, and `reset`, making it possible to write a custom micro-queue for `PowerQueue`, such as a queue that is persisted into a database.
 
 > Note: MicroQueue can be used with `PowerQueue` but `MicroQueue` lacks the
 > properties of n key ordered list - *It does try to compensate when reinserting keys - this is especially optimized for the [PowerQueue](https://github.com/CollectionFS/Meteor-powerqueue)*
