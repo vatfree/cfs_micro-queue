@@ -1,4 +1,4 @@
-/** A basic lifo or fifo queue
+/** A basic LIFO or FIFO queue
   * This is better than a simple array with pop/shift because shift is O(n)
   * and can become slow with a large array.
   * @method MicroQueue
@@ -7,11 +7,11 @@
   * This queue was build as the spinal basis for the [`PowerQueue`](#PowerQueue)
   * The interface is very basic and consists of:
   * `add`, `get`, `reset` Making it possible to write a custom micro-queue for
-  * the `PowerQueue` eg.: a queue that is persisted into a database etc.
+  * `PowerQueue`, such as a queue that is persisted into a database.
   *
   * Usage:
 ```js
-  var foo = new MicroQueue(); // Basic fifo queue
+  var foo = new MicroQueue(); // Basic FIFO queue
   foo.add(1);
   foo.add(2);
   foo.add(3);
@@ -41,11 +41,11 @@ MicroQueue = function(lifo) {
     * @param {any} value The item to add to the queue
     */
   self.insert = function(key, value) {
-    // Compare key with first/last depending on lifo to determin if it should
-    // be added reversed order. We track the greatest key entered - if we insert
+    // Compare key with first/last depending on LIFO to determine if it should
+    // be added in reverse order. We track the greatest key entered - if we insert
     // a key lower than this we should add it the the opposite end of the queue
     // We are compensating for the true use of keys in micro-queue its not truly
-    // ordered by keys but we do try to order just a bit without spoiling speed
+    // ordered by keys but we do try to order just a bit without impacting performance too much.
     // Tasks can be cut off from the power-queue typically unordered since tasks
     // will often run async
     if (key > maxKey) maxKey = key;
