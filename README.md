@@ -1,4 +1,4 @@
-Micro queue [![Build Status](https://travis-ci.org/CollectionFS/Meteor-micro-queue.png?branch=master)](https://travis-ci.org/CollectionFS/Meteor-micro-queue)
+cfs:micro-queue [![Build Status](https://travis-ci.org/CollectionFS/Meteor-micro-queue.png?branch=master)](https://travis-ci.org/CollectionFS/Meteor-micro-queue)
 =========
 
 MicroQueue is a simple LIFO or FIFO queue. It's faster than a simple array with `pop`/`shift` because `shift` is O(n)

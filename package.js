@@ -1,8 +1,11 @@
 Package.describe({
+  name: 'cfs:micro-queue',
+  version: '0.0.0',
   summary: "Micro-queue provides a small, fast queue/list built for Power-Queue"
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom('METEOR@0.9.1');
 
   api.use('deps', ['client', 'server']);
 
@@ -11,7 +14,7 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-  api.use('micro-queue');
+  api.use('cfs:micro-queue');
   api.use('test-helpers', 'server');
   api.use('tinytest');
 
