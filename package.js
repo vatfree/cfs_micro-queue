@@ -1,22 +1,23 @@
 Package.describe({
   name: 'cfs:micro-queue',
-  version: '0.0.0',
-  summary: "Micro-queue provides a small, fast queue/list built for Power-Queue"
+  version: '0.0.4',
+  summary: 'Micro-queue provides a small, fast queue/list built for Power-Queue',
+  git: 'https://github.com/CollectionFS/Meteor-micro-queue.git'
 });
 
-Package.on_use(function (api) {
-  api.versionsFrom('METEOR@0.9.1');
+Package.onUse(function (api) {
+  api.versionsFrom('1.0');
 
   api.use('deps', ['client', 'server']);
 
-  api.export && api.export('MicroQueue');
-  api.add_files(['micro-queue.js'], ['client', 'server']);
+  api.export('MicroQueue');
+  api.addFiles(['micro-queue.js'], ['client', 'server']);
 });
 
-Package.on_test(function (api) {
+Package.onTest(function (api) {
   api.use('cfs:micro-queue');
   api.use('test-helpers', 'server');
   api.use('tinytest');
 
-  api.add_files('tests.js');
+  api.addFiles('tests.js');
 });
