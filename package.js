@@ -1,6 +1,6 @@
 Package.describe({
   name: 'cfs:micro-queue',
-  version: '0.0.5',
+  version: '0.0.6',
   summary: 'Micro-queue provides a small, fast queue/list built for Power-Queue',
   git: 'https://github.com/CollectionFS/Meteor-micro-queue.git'
 });
