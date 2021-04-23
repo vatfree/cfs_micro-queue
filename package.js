@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'cfs:micro-queue',
+  name: 'zcfs:micro-queue',
   version: '0.0.6',
   summary: 'Micro-queue provides a small, fast queue/list built for Power-Queue',
-  git: 'https://github.com/CollectionFS/Meteor-micro-queue.git'
+  git: 'https://github.com/zcfs/Meteor-micro-queue.git'
 });
 
 Package.onUse(function (api) {
@@ -15,7 +15,7 @@ Package.onUse(function (api) {
 });
 
 Package.onTest(function (api) {
-  api.use('cfs:micro-queue');
+  api.use('zcfs:micro-queue');
   api.use('test-helpers', 'server');
   api.use('tinytest');
 
