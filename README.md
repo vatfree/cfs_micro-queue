@@ -1,4 +1,4 @@
-zcfs:micro-queue [![Build Status](https://travis-ci.org/CollectionFS/Meteor-micro-queue.png?branch=master)](https://travis-ci.org/CollectionFS/Meteor-micro-queue)
+cfs:micro-queue [![Build Status](https://travis-ci.org/CollectionFS/Meteor-micro-queue.png?branch=master)](https://travis-ci.org/CollectionFS/Meteor-micro-queue)
 =========
 
 ~~Looking for maintainers - please reach out!~~
@@ -11,10 +11,10 @@ This package is to be archived due to inability to find contributors, thanks to 
 MicroQueue is a simple LIFO or FIFO queue. It's faster than a simple array with `pop`/`shift` because `shift` is O(n)
 and can become slow with a large array.
 
-This queue was built as a [spinal-queue](https://github.com/zcfs/Meteor-power-queue/blob/master/spinal-queue.spec.md) for the [`PowerQueue`](https://github.com/zcfs/Meteor-power-queue) package. The interface is very basic and consists of `add`, `get`, and `reset`, making it possible to write a custom micro-queue for `PowerQueue`, such as a queue that is persisted into a database.
+This queue was built as a [spinal-queue](https://github.com/vatfree/cfs_power-queue/blob/master/spinal-queue.spec.md) for the [`PowerQueue`](https://github.com/vatfree/cfs_power-queue) package. The interface is very basic and consists of `add`, `get`, and `reset`, making it possible to write a custom micro-queue for `PowerQueue`, such as a queue that is persisted into a database.
 
 > Note: MicroQueue can be used with `PowerQueue` but `MicroQueue` lacks the
-> properties of n key ordered list - *It does try to compensate when reinserting keys - this is especially optimized for the [PowerQueue](https://github.com/zcfs/Meteor-powerqueue)*
+> properties of n key ordered list - *It does try to compensate when reinserting keys - this is especially optimized for the [PowerQueue](https://github.com/vatfree/cfs_powerqueue)*
 
 And... It's powered by Meteor's reactive sugar :)
 
